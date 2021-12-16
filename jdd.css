@@ -194,7 +194,7 @@ div.gutter {
 
 div.codeLine span.diff {
     cursor: pointer;
-    color: #c00;
+    color: black;
 }
 
 div.codeLine span.eq_off, div.codeLine span.type_off, div.codeLine span.missing_off {
@@ -202,18 +202,19 @@ div.codeLine span.eq_off, div.codeLine span.type_off, div.codeLine span.missing_
 }
 
 div.codeLine span.eq {
-    background: rgba(50, 57, 88, 0.1);
-    color: #333;
+    background: rgb(255, 0, 0, 0.1);
+    color: rgb(149, 2, 2);
 }
 
 div.codeLine span.type {
-    background: rgba(220, 100, 100, 0.1);
+    background: rgba(200, 180, 0, 0.3);
 }
 
 div.codeLine span.missing {
     background: rgba(0, 160, 80, 0.1);
     color: green;
 }
+
 
 div.codeLine span.selected {
     background: #cef;
@@ -318,3 +319,13 @@ span.fileInput {
     display: block;
     margin: 5px auto;
 }
+
+/* styling for legend */
+.legend { list-style: none; padding: 7.5px}
+.legend li { float: left; margin-right: 10px; }
+.legend span { border: 1px solid #ccc; float: left; width: 12px; height: 12px; margin: 2px; }
+
+.legend .selected { background-color: rgb(140, 211, 246); }
+.legend .addition-deletion { background-color: rgba(0, 160, 80, 0.5); }
+.legend .type-mismatch { background-color: rgba(149, 160, 0, 0.5); }
+.legend .value-changed { background-color: rgb(255, 0, 0, 0.5); }
